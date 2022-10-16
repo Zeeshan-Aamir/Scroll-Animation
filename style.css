@@ -1,0 +1,97 @@
+body {
+background-color: #131316;
+color: #fff;
+font-family: 'Malgun Gothic Console';
+padding: 0;
+margin: 0;
+overflow-x: hidden; 
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+}
+
+section{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    padding-left: 10px;
+    padding-right: 10px;
+    scroll-snap-align: start;
+}
+
+h1, h2, p {
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+h1 {
+    font-size: 10vh;
+    background: linear-gradient(to left, rgb(112, 101,214), rgb(230, 106, 213));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    font-size: 6vh;
+    background: linear-gradient(to left, teal, tomato);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p {
+    background: linear-gradient(to left, rgb(184, 125, 196), rgb(184, 110, 97));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 3s;
+    transform: translateX(-100%);
+    filter: blur(10px);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.pic {
+    display: flex;
+    max-height: 100px;
+    max-width: 100px;
+    min-height: 25px;
+    min-height: 25px
+}
+
+img {
+	display: inline-flex;
+
+}
+
+.pic:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.pic:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+.pic:nth-child(4) {
+    transition-delay: 600ms;
+}
+
+span {
+    font-size: 10vh;
+    background: linear-gradient(to left, rgb(39, 85, 46), rgb(126, 161, 45));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer{
+    font-size: 5vh
+}
